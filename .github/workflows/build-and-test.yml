@@ -52,4 +52,6 @@ jobs:
         run: sh script/antlr4/generate_parser.sh
 
       - name: Test
-        run: sh script/test/test.sh
+        run: |
+          conda info
+          sh script/test/test.sh
