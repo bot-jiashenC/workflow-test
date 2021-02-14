@@ -28,6 +28,7 @@ dependencies:
   - sphinx 
   - sphinx_rtd_theme
   - ffmpeg
+  - x264=20131218
   - pip:
     - antlr4-python3-runtime==4.8
     - petastorm
