@@ -19,7 +19,7 @@ jobs:
           mysql dataset: 'eva_catelog'
           # set these so that root password is empty
           mysql user: 'eva'
-          mysql password: 'doesn't matter'
+          mysql password: 'doesnt matter'
 
       - name: Install Java 8
         uses: actions/setup-java@1
