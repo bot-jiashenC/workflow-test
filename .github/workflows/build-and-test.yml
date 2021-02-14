@@ -52,6 +52,7 @@ jobs:
         run: sh script/antlr4/generate_parser.sh
 
       - name: Test
+        shell: bash
         run: |
           conda init bash
           conda activate eva
