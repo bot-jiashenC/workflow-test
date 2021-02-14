@@ -53,6 +53,7 @@ jobs:
 
       - name: Test
         run: |
+          conda init bash
           conda activate eva
           conda info
           sh script/test/test.sh
