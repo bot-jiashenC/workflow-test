@@ -54,7 +54,7 @@ jobs:
       - name: Test
         shell: bash
         run: |
-          conda init bash
+          eval "$(conda shell.bash hook)"
           conda activate eva
           conda info
           sh script/test/test.sh
