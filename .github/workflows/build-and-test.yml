@@ -53,5 +53,6 @@ jobs:
 
       - name: Test
         run: |
+          conda activate eva
           conda info
           sh script/test/test.sh
