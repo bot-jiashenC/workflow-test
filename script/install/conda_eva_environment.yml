@@ -27,8 +27,8 @@ dependencies:
   - flake8
   - sphinx 
   - sphinx_rtd_theme
-  - ffmpeg
-  - x264=20131218
+  - x264=='1!152.20180717' 
+  - ffmpeg=4.0.2
   - pip:
     - antlr4-python3-runtime==4.8
     - petastorm
