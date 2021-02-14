@@ -46,9 +46,7 @@ jobs:
           use-only-tar-bz2: true
 
       - name: Generate eva-ql parser
-        command: |
-          sh script/antlr4/generate_parser.sh
+        run: sh script/antlr4/generate_parser.sh
 
       - name: Test
-        command: |
-          sh script/test/test.sh
+        run: sh script/test/test.sh
