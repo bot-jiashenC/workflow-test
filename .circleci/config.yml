@@ -14,6 +14,7 @@ jobs:
           name: Before Install
           command: |
             sh script/install/before_install.sh
+            sudo apt-get install -y npm
           environment:
             DEBIAN_FRONTEND: noninteractive
 
