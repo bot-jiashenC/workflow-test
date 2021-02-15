@@ -6,6 +6,8 @@
 # Run linter (checks code style)
 flake8 --select E,F src/ test/ --exclude src/filters,src/parser/evaql
 linter_code=$?
+# Remove cached coverage report
+rm .coverage
 # Run unit tests
 PYTHONPATH=./ pytest test/ --cov-report=annotate:.coverage --cov-config=.coveragerc --cov=src/ -s -v --log-level=WARNING
 test_code=$?
