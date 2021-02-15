@@ -13,7 +13,6 @@ dependencies:
   - coverage
   - pytest-cov
   - autopep8
-  - autoflake
   - pytorch::torchvision
   - pytorch::pytorch
   - tensorflow
@@ -24,7 +23,6 @@ dependencies:
   - sqlalchemy-utils
   - mock
   - pytest-asyncio
-  - flake8
   - sphinx 
   - sphinx_rtd_theme
   - pip:
@@ -33,4 +31,5 @@ dependencies:
     - pre-commit
     - flake8
     - pytest
+    - autoflake
 prefix: eva
