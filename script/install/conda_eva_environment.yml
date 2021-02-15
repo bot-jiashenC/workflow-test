@@ -1,8 +1,7 @@
 name: eva
 channels:
   - pytorch
-  - defaults
-  - conda-forge
+  - anaconda
 dependencies:
   - python=3.7.6
   - pip
