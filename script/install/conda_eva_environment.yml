@@ -32,4 +32,5 @@ dependencies:
     - flake8
     - pytest
     - autoflake
+    - coveralls
 prefix: eva
