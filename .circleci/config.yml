@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  coveralls: coveralls/coveralls@1.0.6
-
 jobs:
   build-and-test:
     machine:
@@ -14,7 +11,6 @@ jobs:
           name: Before Install
           command: |
             sh script/install/before_install.sh
-            sudo apt-get install -y npm
           environment:
             DEBIAN_FRONTEND: noninteractive
 
@@ -37,8 +33,6 @@ jobs:
             source ~/.bashrc
             conda activate eva
             sh script/test/test.sh
-
-      - coveralls/upload
       
 workflows:
   main:
