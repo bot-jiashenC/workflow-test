@@ -18,5 +18,5 @@ else
     exit $test_code
 fi
 
-# Publish results to CI
+# Publish to CI
 coveralls
