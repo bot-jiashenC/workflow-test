@@ -6,10 +6,10 @@
 # Run linter (checks code style)
 flake8 --select E,F src/ test/ --exclude src/filters,src/parser/evaql
 linter_code=$?
-# Remove cached coverage report
-rm .coverage
-# Run unit tests
+
+# Deprecated after moving away from Travis CI: Run unit tests
 PYTHONPATH=./ pytest test/ --cov-report= --cov-config=.coveragerc --cov=src/ -s -v --log-level=WARNING
+
 test_code=$?
 if [ $linter_code -ne 0 ];
 then
@@ -17,3 +17,6 @@ then
 else
     exit $test_code
 fi
+
+# Publish results to CI
+coveralls
