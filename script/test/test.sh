@@ -15,8 +15,7 @@ if [ $linter_code -ne 0 ];
 then
     exit $linter_code
 else
+    # Publish to Circle CI
+    coveralls
     exit $test_code
 fi
-
-# Publish to Circle CI
-coveralls
